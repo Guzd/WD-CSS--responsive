@@ -1,0 +1,102 @@
+/* The only reset you’ll ever need */
+
+body {
+  background-color: grey;
+}
+
+html {
+  min-height: 100%;
+}
+
+#row {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 10%;
+  
+}
+
+.card {
+  border-radius: 15px;
+  background-color: white;
+  display: grid;  
+  grid-template-columns: 80px 250px auto;
+  grid-template-rows: 90px 90px 90px; 
+  padding: 10px;
+  grid-gap: 10px;
+
+  }
+
+.thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.imagen {
+  justify-self: center;
+  grid-row: 1/-1;
+}
+
+.start {
+  color: #FFC300;
+  font-size: 14px;
+  font-family: sans-serif;
+  min-width: 70px;
+}
+
+.imgStart {
+  width: 15px;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 2/-2;
+}
+
+
+h2 {
+ font-family: 'Josefin Sans', sans-serif;
+ margin-bottom: 0px;
+}
+
+h3 {
+  color: grey;
+  margin-top: 0px;
+  font-family: Arial;
+  text-transform: uppercase;
+  font-size: 14px;
+  
+}
+
+.texto{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  grid-column: 2/-2;
+
+}
+
+.botones {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  grid-column: 2/-1;
+}
+
+button {
+  width: 80px;
+  height: 25px;
+  margin: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+}
+
+button:last-of-type {
+  background-color: blue;
+}
+
